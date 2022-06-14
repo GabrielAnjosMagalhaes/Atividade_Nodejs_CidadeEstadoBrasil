@@ -1,7 +1,7 @@
 {
-  "name": "atividade_nodejs_cidadeestadobrasil",
+  "name": "index.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Criando seguinte atividade proposta em sala:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
