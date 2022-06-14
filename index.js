@@ -24,8 +24,8 @@ async function criarArquivos(){ //essa função criará os arquivos que armazena
     
     //console.log(cidades) //verificando
 
-    for (estado of estados) {
-        const cidadesEstado = cidades.filter(cidade => cidade.Estado === estado.ID) 
-        await fs.writeFile(`./estados/${estado.Sigla}.json`, JSON.stringify(cidadesEstado))
+    for (estado of estados) { // criando um for para criar arquivo com as os estados e as cidades pertencentes a ele
+        const cidadesEstado = cidades.filter(cidade => cidade.Estado === estado.ID) //definindo variavel das cidades do estado(cidadeEstado) para filtrar as cidades por meio do id dos estados
+        await fs.writeFile(`./estados/${estado.Sigla}.json`, JSON.stringify(cidadesEstado)) //criando arquivos na pasta estados
     }
 }
