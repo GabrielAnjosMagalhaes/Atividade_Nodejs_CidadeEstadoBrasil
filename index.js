@@ -1,13 +1,12 @@
 fs = require("fs").promises
 
 //executando função de inicio
-//inicio()
-contadorMG()
+inicio()    
 
 //função criada para executar outras funções ao rodar o código
 async function inicio(){ // criando função inicio de forma assícrona
  criarArquivos() //ao iniciar executar a função criarArquivos
- 
+ MaisCidades()//ao iniciar executar a função estadoMaisCidades
 }   
 
 async function criarArquivos(){ //essa função criará os arquivos que armazenarão os estados e as cidades importadas 
@@ -31,12 +30,39 @@ async function criarArquivos(){ //essa função criará os arquivos que armazena
     }
 }
 
-async function contadorMG(uf){//função para retornar a quantidade de cidades baseado no estado selecionado (como por exemplo MG)
+async function contadorM(_uf){//função para retornar a quantidade de cidades baseado no estado selecionado (como por exemplo MG)
 //aqui irei repetir de certo modo o comando utilizado na função criarArquivos 
-const dados = await fs.readFile(`./estados/MG.json`) //lendo dados da pasta criada: "estados"
+const dados = await fs.readFile(`./estados/${_uf}.json`) //lendo dados da pasta criada: "estados" baseado em seu UF
 const cidades = JSON.parse(dados) //convertendo dados para forma legível
-console.log(`Minas Gerais tem ${cidades.length} cidades`) // imprimindo o numero de cidades encontradas em MG.json
+console.log(`${_uf} tem ${cidades.length} cidades`) // imprimindo o numero de cidades encontradas nos estados
 return cidades.length // retornando o numero de cidades
 }
 
+async function MaisCidades(mais) {//criando função para obter os estados com mais cidades 
+    const estados = JSON.parse(await fs.readFile("./importado/Estados.json")); //lendo arquivo e convertendo seu conteudo para legivel    
+    const lista = []; // criando um array para ser usado como lista 
+
+    
+   for (estado of estados) { // criando um for para utilizar a função de contagem já criada para adicionar elemetos a lista
+        const contagem = await contadorM(estado.Sigla); //
+        lista.push({ _uf: estado.Sigla, contagem });
+        console.log(contagem)
+    }
+    
+ 
+    lista.sort((a, b) => { //colocando dados da lista em ordem alfabética
+        if (a.contagem < b.contagem) return 1;
+        else if (a.contagem > b.contagem) return -1;
+        else return 0;
+    });
+
+    const resultado = [];
+    if (mais) {
+        lista.slice(0, 5).forEach(item => resultado.push(item._uf + " - " + item.contagem));
+    } else {
+        lista.slice(-5).forEach(item => resultado.push(item._uf + " - " + item.contagem));
+    }
+
+    console.log(resultado);
+}
     
