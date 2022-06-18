@@ -43,10 +43,10 @@ async function MaisCidades(mais) {//criando função para obter os estados com m
     const lista = []; // criando um array para ser usado como lista 
 
     
-   for (estado of estados) { // criando um for para utilizar a função de contagem já criada para adicionar elemetos a lista
-        const contagem = await contadorM(estado.Sigla); //
-        lista.push({ _uf: estado.Sigla, contagem });
-        console.log(contagem)
+   for (estado of estados) { // criando um for para utilizar a função de contagem já criada para adicionar elementos a lista
+        const contagem = await contadorM(estado.Sigla); //criando variável para receber as siglas dos estados 
+        lista.push({ _uf: estado.Sigla, contagem });//adicionando na array lista SIGLA - CONTAGEM
+        console.log(contagem)//mostrando o array com os Estados + Contagem de cidades 
     }
     
  
