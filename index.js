@@ -6,7 +6,9 @@ inicio()
 //função criada para executar outras funções ao rodar o código
 async function inicio(){ // criando função inicio de forma assícrona
  criarArquivos() //ao iniciar executar a função criarArquivos
+ listarCapitais() //ao iniciar executar a função listarCapitais
  MaisCidades()//ao iniciar executar a função estadoMaisCidades
+ capitais()//ao iniciar executa a função capitais que irá buscar a capital dos estados 
 }   
 
 async function criarArquivos(){ //essa função criará os arquivos que armazenarão os estados e as cidades importadas 
@@ -66,3 +68,46 @@ async function MaisCidades(mais) {//criando função para obter os estados com m
     console.log(resultado);
 }
     
+//atividade continuação 
+
+async function listarCapitais (){
+//criando +-
+}
+
+async function capitais(UF){
+//aqui irei fazer uma função para buscar as capitais dos estados 
+const dados = await fs.readFile(`./`)
+}
+
+/*
+async function contadorM(_uf){//função para retornar a quantidade de cidades baseado no estado selecionado (como por exemplo MG)
+    //aqui irei repetir de certo modo o comando utilizado na função criarArquivos 
+    const dados = await fs.readFile(`./estados/${_uf}.json`) //lendo dados da pasta criada: "estados" baseado em seu UF
+    const cidades = JSON.parse(dados) //convertendo dados para forma legível
+    console.log(`${_uf} tem ${cidades.length} cidades`) // imprimindo o numero de cidades encontradas nos estados
+    return cidades.length // retornando o numero de cidades
+    }
+    
+
+   async function criarArquivos(){ //essa função criará os arquivos que armazenarão os estados e as cidades importadas 
+    let dados = await fs.readFile("./importado/Estados.json") // recebendo dados do arquivo exportado: Estados.json
+
+    //console.log(dados) //verificando 
+
+    const estados = JSON.parse(dados) //convertendo os dados recebidos em forma legível
+
+    //console.log(estados) //verificando
+
+    //aqui irei repetir o mesmo processo porém para as cidades
+    dados = await fs.readFile("./importado/Cidades.json")
+    const cidades = JSON.parse(dados)
+    
+    //console.log(cidades) //verificando
+
+    for (estado of estados) { // criando um for para criar arquivo com as os estados e as cidades pertencentes a ele
+        const cidadesEstado = cidades.filter(cidade => cidade.Estado === estado.ID) //definindo variavel das cidades do estado(cidadeEstado) para filtrar as cidades por meio do id dos estados
+        await fs.writeFile(`./estados/${estado.Sigla}.json`, JSON.stringify(cidadesEstado)) //criando arquivos na pasta estados
+    }
+}
+
+*/

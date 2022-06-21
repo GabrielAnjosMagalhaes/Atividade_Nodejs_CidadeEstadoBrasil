@@ -2,151 +2,151 @@
 "Capital":"Rio Branco",
 "Estado": "Acre", 
 "Sigla":"AC" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 },
 
-{"Capital":"Maceió",
+{"Capital":"Maceiï¿½",
 "Estado": "Alagoas", 
 "Sigla":"AL" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 
-{"Capital":"Macapá",
-"Estado": "Amapá", 
+{"Capital":"Macapï¿½",
+"Estado": "Amapï¿½", 
 "Sigla":"AP" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 },
 
 {"Capital":"Manaus",
 "Estado": "Amazonas", 
 "Sigla":"AM" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 },
 
 {"Capital":"Salvador",
 "Estado": "Bahia", 
 "Sigla":"BA" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 
 {"Capital":"Fortaleza",
-"Estado": "Ceará", 
+"Estado": "Cearï¿½", 
 "Sigla":"CE" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 
-{"Capital":"Brasília",
+{"Capital":"Brasï¿½lia",
 "Estado": "Distrito Federal", 
 "Sigla":"DF" ,
-"Região":"Centro-Oeste"
+"Regiï¿½o":"Centro-Oeste"
 },
 
-{"Capital":"Vitória",
-"Estado": "Espírito Santo", 
+{"Capital":"Vitï¿½ria",
+"Estado": "Espï¿½rito Santo", 
 "Sigla":"ES" ,
-"Região":"Sudeste"
+"Regiï¿½o":"Sudeste"
 },
 
-{"Capital":"Goiânia",
-"Estado": "Goiás", 
+{"Capital":"Goiï¿½nia",
+"Estado": "Goiï¿½s", 
 "Sigla":"GO" ,
-"Região":"Centro-Oeste"
+"Regiï¿½o":"Centro-Oeste"
 },
 
-{"Capital":"São Luís",
-"Estado": "Maranhão", 
+{"Capital":"Sï¿½o Luï¿½s",
+"Estado": "Maranhï¿½o", 
 "Sigla":"MA" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 
-{"Capital":"Cuiabá",
+{"Capital":"Cuiabï¿½",
 "Estado": "Mato Grosso", 
 "Sigla":"MT" ,
-"Região":"Centro-Oeste"
+"Regiï¿½o":"Centro-Oeste"
 },
 
 {"Capital":"Campo Grande",
 "Estado": "Mato Grosso do Sul", 
 "Sigla":"MS" ,
-"Região":"Centro-Oeste"
+"Regiï¿½o":"Centro-Oeste"
 },
 
 {"Capital":"Belo Horizonte",
 "Estado": "Minas Gerais", 
 "Sigla":"MG" ,
-"Região":"Sudeste"
+"Regiï¿½o":"Sudeste"
 },
 
-{"Capital":"Belém",
-"Estado": "Pará", 
+{"Capital":"Belï¿½m",
+"Estado": "Parï¿½", 
 "Sigla":"PA" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 },
-{"Capital":"João Pessoa",
-"Estado": "Paraíba", 
+{"Capital":"Joï¿½o Pessoa",
+"Estado": "Paraï¿½ba", 
 "Sigla":"PB" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 {"Capital":"Curitiba",
-"Estado": "Paraná", 
+"Estado": "Paranï¿½", 
 "Sigla":"PR" ,
-"Região":"Sul"
+"Regiï¿½o":"Sul"
 },
 {"Capital":"Recife",
 "Estado": "Pernambuco", 
 "Sigla":"PE" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 {"Capital":"Teresina",
-"Estado": "Piauí", 
+"Estado": "Piauï¿½", 
 "Sigla":"PI" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 {"Capital":"Rio de Janeiro",
 "Estado": "Rio de Janeiro", 
 "Sigla":"RJ" ,
-"Região":"Sudeste"
+"Regiï¿½o":"Sudeste"
 },
 {"Capital":"Natal",
 "Estado": "Rio Grande do Norte", 
 "Sigla":"RN" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 
 {"Capital":"Porto Alegre",
 "Estado": "Rio Grande do Sul", 
 "Sigla":"RS" ,
-"Região":"Sul"
+"Regiï¿½o":"Sul"
 },
 {"Capital":"Porto Velho",
-"Estado": "Rondônia", 
+"Estado": "Rondï¿½nia", 
 "Sigla":"RO" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 },
 
 {"Capital":"Boa Vista",
 "Estado": "Roraima", 
 "Sigla":"RR" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 },
-{"Capital":"Florianópolis",
+{"Capital":"Florianï¿½polis",
 "Estado": "Santa Catarina", 
 "Sigla":"SC" ,
-"Região":"Sul"
+"Regiï¿½o":"Sul"
 },
-{"Capital":"São Paulo",
-"Estado": "São Paulo", 
+{"Capital":"Sï¿½o Paulo",
+"Estado": "Sï¿½o Paulo", 
 "Sigla":"SP" ,
-"Região":"Sudeste"
+"Regiï¿½o":"Sudeste"
 },
 
-{"Capital":"Aracajú",
+{"Capital":"Aracajï¿½",
 "Estado": "Sergipe", 
 "Sigla":"SE" ,
-"Região":"Nordeste"
+"Regiï¿½o":"Nordeste"
 },
 {"Capital":"Palmas",
 "Estado": "Tocantins", 
 "Sigla":"TO" ,
-"Região":"Norte"
+"Regiï¿½o":"Norte"
 }]
